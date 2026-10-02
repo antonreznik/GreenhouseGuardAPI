@@ -13,6 +13,11 @@ The API listens at `https://localhost:7040`. In Development, its OpenAPI documen
 
 The backend uses SQLite; its connection string is configured in `GreenhouseGuard/appsettings.json`.
 
+## Test data
+Use GreenhouseGuard.http file to send requests with random readings.
+- Create 20 Sensor Readings
+- Create Sensor Reading
+
 ## Architecture
 
 The solution separates responsibilities into layers:
