@@ -28,3 +28,7 @@ The solution separates responsibilities into layers:
 - **Infrastructure** implements data access with Entity Framework Core and SQLite, including database migrations.
 
 The API wires these layers together through dependency injection.
+
+## Future improvements
+- proper logging
+- thread safe in-memmory stores 
