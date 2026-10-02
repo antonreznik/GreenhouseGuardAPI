@@ -1,0 +1,40 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+[Tt]est[Rr]esults/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains Rider / ReSharper
+.idea/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NuGet packages and generated files
+*.nupkg
+*.snupkg
+.nuget/
+
+# Publish and profiling output
+publish/
+*.publishsettings
+*.coverage
+*.coveragexml
+
+# OS files
+.DS_Store
+Thumbs.db

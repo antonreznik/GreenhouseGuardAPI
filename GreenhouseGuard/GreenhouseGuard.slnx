@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../Application/Application.csproj" />
+  <Project Path="../Domain/Domain.csproj" />
+  <Project Path="../Infrastructure/Infrastructure.csproj" />
+  <Project Path="../Tests/Tests.csproj" Id="7950d0fe-da52-4c99-a33c-d6608931c307" />
+  <Project Path="GreenhouseGuard.csproj" />
+</Solution>

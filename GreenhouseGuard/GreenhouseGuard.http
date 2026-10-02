@@ -1,0 +1,153 @@
+@GreenhouseGuard_HostAddress = http://localhost:5271
+@ContentType = application/json
+
+### Get Latest Sensor Reading
+GET {{GreenhouseGuard_HostAddress}}/api/readings/latest
+Accept: {{ContentType}}
+
+###
+
+### Get Recent Anomalies
+GET {{GreenhouseGuard_HostAddress}}/api/anomalies
+Accept: {{ContentType}}
+
+###
+
+### Create 20 Sensor Readings
+POST {{GreenhouseGuard_HostAddress}}/api/readings
+Content-Type: {{ContentType}}
+[
+  {
+    "temperature": 180,
+    "humidity": 200,
+    "co2Ppm": 400,
+    "timestamp": "2026-09-30T11:50:00Z"
+  },
+  {
+     "temperature": 24.8,
+     "humidity": 58.4,
+     "co2Ppm": 382,
+    "timestamp": "2026-09-30T11:51:00Z"
+   },
+   {
+     "temperature": 26.1,
+     "humidity": 61.7,
+     "co2Ppm": 417,
+    "timestamp": "2026-09-30T11:52:00Z"
+   },
+   {
+     "temperature": 28.3,
+     "humidity": 68.2,
+     "co2Ppm": 451,
+    "timestamp": "2026-09-30T11:53:00Z"
+   },
+   {
+     "temperature": 23.9,
+     "humidity": 55.6,
+     "co2Ppm": 365,
+    "timestamp": "2026-09-30T11:54:00Z"
+   },
+   {
+     "temperature": 29.1,
+     "humidity": 70.5,
+     "co2Ppm": 478,
+    "timestamp": "2026-09-30T11:55:00Z"
+   },
+   {
+     "temperature": 25.6,
+     "humidity": 63.8,
+     "co2Ppm": 405,
+    "timestamp": "2026-09-30T11:56:00Z"
+   },
+   {
+     "temperature": 27.9,
+     "humidity": 66.1,
+     "co2Ppm": 439,
+    "timestamp": "2026-09-30T11:57:00Z"
+   },
+   {
+     "temperature": 22.7,
+     "humidity": 52.3,
+     "co2Ppm": 341,
+    "timestamp": "2026-09-30T11:58:00Z"
+   },
+   {
+     "temperature": 30.4,
+     "humidity": 73.6,
+     "co2Ppm": 512,
+    "timestamp": "2026-09-30T11:59:00Z"
+   },
+   {
+     "temperature": 26.8,
+     "humidity": 60.9,
+     "co2Ppm": 396,
+    "timestamp": "2026-09-30T12:00:00Z"
+   },
+   {
+     "temperature": 24.2,
+     "humidity": 57.1,
+     "co2Ppm": 374,
+    "timestamp": "2026-09-30T12:01:00Z"
+   },
+   {
+     "temperature": 28.7,
+     "humidity": 69.4,
+     "co2Ppm": 466,
+    "timestamp": "2026-09-30T12:02:00Z"
+   },
+   {
+     "temperature": 25.1,
+     "humidity": 59.8,
+     "co2Ppm": 388,
+    "timestamp": "2026-09-30T12:03:00Z"
+   },
+   {
+     "temperature": 31.2,
+     "humidity": 76.0,
+     "co2Ppm": 529,
+    "timestamp": "2026-09-30T12:04:00Z"
+   },
+   {
+     "temperature": 23.5,
+     "humidity": 54.7,
+     "co2Ppm": 356,
+    "timestamp": "2026-09-30T12:05:00Z"
+   },
+   {
+     "temperature": 27.2,
+     "humidity": 64.5,
+     "co2Ppm": 423,
+    "timestamp": "2026-09-30T12:06:00Z"
+   },
+   {
+     "temperature": 29.8,
+     "humidity": 71.9,
+     "co2Ppm": 495,
+    "timestamp": "2026-09-30T12:07:00Z"
+   },
+   {
+     "temperature": 26.4,
+     "humidity": 62.6,
+     "co2Ppm": 410,
+    "timestamp": "2026-09-30T12:08:00Z"
+   },
+   {
+     "temperature": 24.9,
+     "humidity": 56.8,
+     "co2Ppm": 369,
+    "timestamp": "2026-09-30T12:09:00Z"
+   }
+]
+
+### Create Sensor Reading
+POST {{GreenhouseGuard_HostAddress}}/api/readings
+Content-Type: {{ContentType}}
+[
+  {
+    "temperature": 30,
+    "humidity": 100,
+    "co2Ppm": 100,
+    "timestamp": "2026-09-30T11:50:00Z"
+  }
+]
+
